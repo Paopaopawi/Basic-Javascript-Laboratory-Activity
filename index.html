@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>McDonald's - Main Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+        <img src="images/logo.png" style="width: 100px; height: auto;" alt="">
+        <h1>McDonald's Restaurant</h1>
+    
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Main Course</h2>
+
+    <div class="item">
+        <span>Big-Mac-Meal (₱247)</span>
+        <input type="number" id="chickenQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>1-pc.-Mushroom-pepper-Steak-Rice-bowl-solo (120)</span>
+        <input type="number" id="karekareQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>1pc-Chicken-McDo-with-Rice (₱120)</span>
+        <input type="number" id="sinigangQty" min="0" value="0">
+    </div>
+    <input type="checkbox" id="isSenior"  value="senior">
+    <label for="isSenior">Are you a senior citizen?</label>
+ 
+    <button onclick="computeMainCourse()">Place Order</button>
+
+    <h3>Discount</h3>
+    <h3>Total: ₱<span id="totalMain">0</span></h3>
+</section>
+
+<section>
+     <div class="container">
+  <div class="header"><h1>Menu</h1></div>
+  <div class="content"> 
+    <div><img src="images/Meals/1-pc-Chicken-McDo-Mcspaghetti-with-Drink.jpg" alt=""> <h3>1-pc-Chicken-McDo-Mcspaghetti-with-Drink</h3></div>
+    <div><img src="images/Meals/1-pc.-Mushroom-pepper-Steak-Rice-bowl-solo.jpg" alt=""><h3>1-pc.-Mushroom-pepper-Steak-Rice-bowl-solo</h3></div>
+    <div><img src="images/Meals/1pc-Chicken-McDo-with-Rice.jpg" alt=""><h3>1pc-Chicken-McDo-with-Rice</h3></div>
+
+  
+</section>
+<script src="script.js"></script>
+</body>
+</html>

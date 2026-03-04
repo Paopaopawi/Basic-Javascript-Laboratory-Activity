@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>McDonald's - Main Course</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <img src="images/logo.png" style="width: 100px; height: auto;" alt="">
+        <h1>McDonald's Restaurant</h1>
+    
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+</head>
+<body>
+    <section class="menu">
+    <h2>Main Course</h2>
+
+    <div class="item">
+        <span>Oreo McFlurry (₱69)</span>
+        <input type="number" id="chickenQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Munchies Vanilla Cheesecake McFlurry® (₱110)</span>
+        <input type="number" id="karekareQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Milkybar Cookie Crisp McFlurry® (110)</span>
+        <input type="number" id="sinigangQty" min="0" value="0">
+    </div>
+    <input type="checkbox" id="isSenior"  value="senior">
+    <label for="isSenior">Are you a senior citizen?</label>
+ 
+    <button onclick="computeDessert()">Place Order</button>
+
+    <h3>Discount</h3>
+    <h3>Total: ₱<span id="totalMain">0</span></h3>
+</section>
+
+    <div class="container">
+  <div class="header"><h1>Desserts</h1></div>
+  <div class="content"> 
+     <div><img src="images/mcflurry.jpg" alt=""> <h3>Oreo McFlurry - ₱69</h3></div>
+    <div><img src="images/mcflurry1.jpg" alt=""><h6 style="color: red;">Limited Time Only</h6><h3 style="margin-top: -20px;">Munchies Vanilla Cheesecake McFlurry®  - ₱110</h3></div>
+    <div><img src="images/mcflurry2.jpg" alt=""><h6  style="color: red;">Limited Time Only</h6><h3 style="margin-top: -20px;">Milkybar Cookie Crisp McFlurry®  - ₱110</h3></div>
+  </div>
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
